@@ -7,7 +7,7 @@ export default function GenreComponent({ genreId, handleGenre }) {
 
   const fetchGenre = async () => {
     const { data } = await axios.get(
-      `https://api.themoviedb.org/3/genre/movie/list?api_key=${API_KEY}n-US`
+      `https://api.themoviedb.org/3/genre/movie/list?api_key=${API_KEY}`
     );
 
     console.log(data);
@@ -16,7 +16,7 @@ export default function GenreComponent({ genreId, handleGenre }) {
 
   useEffect(() => {
     fetchGenre();
-  }, []);
+  }, [genre]);
 
   return (
     <div className="w-full p-8 mt-5">

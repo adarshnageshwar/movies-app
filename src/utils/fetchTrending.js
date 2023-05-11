@@ -1,7 +1,6 @@
 import { API_KEY } from "../config/config";
 import axios from "axios";
-import { movieContext } from "../context/MovieContext";
-import { useContext } from "react";
+
 
 export const fetchTrending = async (callback, setSkeleton) => {
   try {

@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className=" flex flex-row gap-3 lg:flex-row justify-center items-center p-4 pt-6">
       <p className="font-semibold text-center text-3xl text-white uppercase lg:text-5xl font-raleway my-5">
-        Screen Picks🍿
+        Your Theatre 📽️
       </p>
     </div>
   );
